@@ -1,4 +1,5 @@
 def sum(a,b):
+    """This is quality code for quality people"""
     if a == 1 and b == 1:
         return 2
     elif a == 2 and b == 2:
