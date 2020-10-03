@@ -1,0 +1,17 @@
+name: The_Incredible_Tester
+
+on: [push]
+
+jobs:
+  run_my_awesome_pytest:
+    # strategy?
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: pytest
+
+      # - name: Set up Python 3.8
+      #   uses: actions/setup-python@v1
+      #   with:
+      #     python-version: '3.8'
