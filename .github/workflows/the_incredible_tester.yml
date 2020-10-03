@@ -1,3 +1,4 @@
+
 name: The_Incredible_Tester
 
 on: [push]
@@ -20,7 +21,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
           poetry install
-
       - name: Hopefully test stuff
         run: poetry run pytest
-
