@@ -22,5 +22,11 @@ jobs:
           poetry install
 
       - name: Hopefully test stuff
-        run: poetry run pytest
+        run: poetry run pytest --cov=testando_gh_actions tests
 
+      - name: Generate coverage.xml
+        run: poetry run coverage xml
+
+      - uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: false  # Setting this to true is a headache.
