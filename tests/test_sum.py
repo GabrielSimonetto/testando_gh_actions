@@ -12,3 +12,6 @@ def test_sum_2_and_2_correct():
 def test_sum_9_and_9():
     with raises(NotImplementedError):
         sum(9,9)
+
+def test_sum_8_and_8():
+    assert sum(4,4) == 8
